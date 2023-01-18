@@ -1,0 +1,9 @@
+#!/bin/bash
+
+metadados=$(zenity --file-selection --title="Select a file")
+
+I=$(exiftool $metadados)
+zenity --info --text="METADADOS: $I" --no-wrap
+
+
+
